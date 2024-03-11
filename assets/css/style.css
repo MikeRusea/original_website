@@ -1,0 +1,301 @@
+.custom-navbar {
+  background-color: lightblue; /* カスタムの背景色を指定 */
+  padding-top: 5rem; /* 上部の余白を設定 */
+  padding-bottom: 5rem; /* 下部の余白を設定 */
+}
+
+.logo{
+  padding-left: 10px;
+}
+
+.text-white{
+  padding-left: 100px;
+}
+
+.navbar .nav-link{
+  color: #fff !important;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.carousel-inner{
+  height: 100vh;
+}
+
+/* News */
+
+.news{
+  text-align: center;
+}
+
+.newslist {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 160px;
+}
+
+.newslist ul {
+  padding-left: 0;
+}
+
+.newslist li {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 0;
+  border-top: 2px solid black;
+}
+
+.newslist li:last-child {
+  border-bottom: 2px solid black;
+}
+
+.newslist .newslist-box {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.newslist .newslist-box p {
+  padding: 5px 10px;
+  background-color: #000;
+  color: #fff;
+  margin: 0 15px;
+}
+
+.newslist .newslist-text {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.newslist .newslist-text a {
+  text-decoration: none;
+  color: black;
+}
+
+/* レスポンシブ */
+@media (max-width: 600px) {
+  .newslist {
+      padding: 0 10px;
+      background-color: #fff;
+  }
+
+  .newslist li {
+      flex-direction: column;
+  }
+
+  .newslist .newslist-box {
+      padding-left: 0;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 10px;
+  }
+}
+
+
+
+/* Greeting from Director */
+
+#greeting{
+  padding-top: 160px;
+}
+
+.director{
+  text-align: left;
+  border-bottom: 2px solid #000;
+  padding-bottom: 3px;
+}
+
+.col-img{
+  background-image: url(../img/00_PP40_PP_TP_V.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 480px;
+  box-shadow:  -7px -10px 5px #cccccc;
+  margin-left: auto;
+}
+
+#greeting .col-lg-6 {
+  margin-left: auto;
+}
+
+#fromdirector{
+  background-color: rgba(144, 238, 144, 0.138);
+  border-radius: 50%
+  
+}
+
+/* About Clinic */
+
+#about{
+  padding-top: 160px;
+}
+
+.about{
+  border-bottom: 2px solid #000;
+  padding-bottom: 3px;
+}
+
+#aboutclinic{
+  background-color: rgba(173, 216, 230, 0.215);
+  border-radius: 70%
+}
+
+
+
+
+
+.col-img2{
+  background-image: url(../img/nikki-son--o15uGwCDLE-unsplash\ \(1\).jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  box-shadow: 7px 10px 5px #cccccc;
+}
+
+
+/* Medical information */
+
+#medical{
+  padding: 160px 160px;
+}
+
+
+
+#clinic{
+  padding-bottom: 160px;
+}
+
+.information{
+  text-align: center;
+  border-bottom: 2px solid #000;
+  padding-bottom: 3px;
+}
+
+.project{
+  position: relative;
+  overflow: hidden;
+}
+
+.project .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 106, 87, 0.509);
+  padding: 30px;
+  display: flex;
+  align-items: flex-end;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.img2{
+  width: 100%;
+}
+
+.project img{
+  transition: all 0;
+}
+
+.project:hover .overlay{
+  opacity: 1;
+}
+
+.project:hover img{
+  transform: scale(1.1);
+}
+
+
+
+.footer{
+  background-color: lightblue;
+}
+
+.container {
+  display: flex;
+}
+
+#address{
+  padding-top: 80px;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  margin-left: calc((100% - 480px) / 2); /* 画面の幅から左の余白を計算して中央に配置 */
+  padding-bottom: 80px;
+  flex: 2;
+  color: #fff;
+}
+
+.address2{
+  border-bottom: 2px solid #fff;
+}
+
+.open{
+  padding-top: 16px;
+}
+
+/* 画面を縮めた時に画像を非表示にする */
+@media (max-width: 768px) {
+  .left {
+    display: none;
+  }
+  
+  .right {
+    width: 100%; /* 右側の幅を100%に拡大 */
+  }
+}
+
+/* 画面を縮めた時にテキストを大きくする */
+@media (max-width: 768px) {
+  .address2 p,
+  .open p {
+    font-size: 1.5em; /* テキストのサイズを大きくする */
+  }
+}
+
+
+.copyright{
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .copyright {
+    display: none;
+  }
+}
+
+.fixed_btn { 
+  position: fixed;
+  height: 80px;
+  bottom: 10px;
+  right: 10px;
+  padding: 6px 40px;
+  background-color: rgb(243, 243, 127);
+  border: rgb(243, 243, 127);
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .fixed_btn {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+
+  a:link{
+    color:#fff;
+    text-decoration: none;
+  }
+
+  a:visited{
+    text-decoration: none;
+    color:#fff;
+  }
